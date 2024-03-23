@@ -43,7 +43,8 @@ class VideoListView extends StatelessWidget {
           child: TextButton(
             onPressed: () {
               _controller.navigateToAllVideosPage(
-                  context, _controller.videos.first.id);
+                context,
+              );
             },
             child: Text(
               titleBtn,
@@ -62,36 +63,12 @@ class VideoListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: _controller.videos.length,
         itemBuilder: (context, index) {
-          String videoId = _controller.videos[index].id;
-          String titleVideo = _controller.videos[index].title;
-          String levelVideo = _controller.videos[index].level;
-          String decsVideo = _controller.videos[index].decs;
-          String timeVideo = _controller.videos[index].time;
-          String imageVideo = _controller.videos[index].image;
-          String statusVideo = _controller.videos[index].status;
-          String colorsVideo = _controller.videos[index].colorsVideo;
+          var videoEntry = _controller.videos[index];
           return VideoListRow(
-            videoId: videoId,
-            titleVideo: titleVideo,
-            levelVideo: levelVideo,
-            decsVideo: decsVideo,
-            timeVideo: timeVideo,
-            imageVideo: imageVideo,
-            statusVideo: statusVideo,
-            index: index,
+            videoEntry: videoEntry,
             onPressed: () {
-              _controller.navigateToVideoPlayer(
-                context,
-                videoId,
-                titleVideo,
-                levelVideo,
-                decsVideo,
-                timeVideo,
-                imageVideo,
-                statusVideo,
-              );
+              _controller.navigateToVideoPlayer(context, videoEntry);
             },
-            colosVideo: colorsVideo,
           );
         },
       ),

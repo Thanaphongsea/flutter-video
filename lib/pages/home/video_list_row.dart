@@ -1,32 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/home/model.dart';
 // import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:rounded_background_text/rounded_background_text.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class VideoListRow extends StatelessWidget {
-  final String videoId;
-  final int index;
-  final String titleVideo;
-  final String levelVideo;
-  final String decsVideo;
-  final String timeVideo;
-  final String imageVideo;
-  final String statusVideo;
-  final String colosVideo;
+  final Video videoEntry;
   final VoidCallback onPressed;
 
   const VideoListRow({
     super.key,
-    required this.videoId,
-    required this.index,
-    required this.titleVideo,
-    required this.levelVideo,
-    required this.decsVideo,
-    required this.timeVideo,
-    required this.imageVideo,
-    required this.statusVideo,
+    required this.videoEntry,
     required this.onPressed,
-    required this.colosVideo,
   });
 
   @override
@@ -54,14 +39,13 @@ class VideoListRow extends StatelessWidget {
                 //   progressIndicatorColor: Colors.blueAccent,
                 // ),
                 // Video widget goes here
-
                 Stack(
                   alignment: Alignment.center,
                   children: <Widget>[
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
-                        image: AssetImage(imageVideo),
+                        image: AssetImage(videoEntry.image),
                         fit: BoxFit.cover,
                         height: 100,
                         // width: 150,
@@ -80,7 +64,7 @@ class VideoListRow extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        titleVideo,
+                        videoEntry.title,
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
@@ -89,9 +73,9 @@ class VideoListRow extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: RoundedBackgroundText(
-                        levelVideo,
+                        videoEntry.level,
                         style: const TextStyle(fontWeight: FontWeight.bold),
-                        backgroundColor: HexColor(colosVideo),
+                        backgroundColor: HexColor(videoEntry.colorsVideo),
                       ),
                     ),
                   ],

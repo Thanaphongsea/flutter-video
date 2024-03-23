@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/home/model.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:rounded_background_text/rounded_background_text.dart';
 
 class VideoPlayerScreen extends StatelessWidget {
-  final String videoId;
-  final String titleVideo;
-  final String levelVideo;
-  final String decsVideo;
-  final String timeVideo;
-  final String imageVideo;
-  final String statusVideo;
+  final Video videoPlay;
 
   const VideoPlayerScreen({
-    Key? key,
-    required this.videoId,
-    required this.titleVideo,
-    required this.levelVideo,
-    required this.decsVideo,
-    required this.timeVideo,
-    required this.imageVideo,
-    required this.statusVideo,
-  }) : super(key: key);
+    super.key,
+    required this.videoPlay,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +23,7 @@ class VideoPlayerScreen extends StatelessWidget {
         children: [
           YoutubePlayer(
             controller: YoutubePlayerController(
-              initialVideoId: videoId,
+              initialVideoId: videoPlay.id,
               flags: const YoutubePlayerFlags(
                 autoPlay: false,
                 mute: false,
@@ -42,27 +32,43 @@ class VideoPlayerScreen extends StatelessWidget {
             showVideoProgressIndicator: true,
             progressIndicatorColor: Colors.blueAccent,
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  titleVideo,
+          Padding(
+            padding: const EdgeInsets.only(left: 24, top: 15),
+            child: Row(
+              children: [
+                Text(
+                  videoPlay.title,
+                  textAlign: TextAlign.start,
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 24.00,
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: RoundedBackgroundText(
-                  levelVideo,
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 24, top: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                RoundedBackgroundText(
+                  videoPlay.level,
                   style: const TextStyle(fontWeight: FontWeight.bold),
-                  backgroundColor: Colors.pink,
+                  backgroundColor: HexColor(videoPlay.colorsVideo),
                 ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 24, top: 15, right: 10),
+            child: Text(
+              videoPlay.decs,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
               ),
-            ],
+              softWrap: true,
+            ),
           ),
         ], // Added closing square bracket
       ),

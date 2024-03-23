@@ -1,0 +1,188 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter-PageView",
+            "cwd": "Users/thavisiny/Flutter-PageView",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Flutter-PageView (profile mode)",
+            "cwd": "Users/thavisiny/Flutter-PageView",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Flutter-PageView (release mode)",
+            "cwd": "Users/thavisiny/Flutter-PageView",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_itemstack_listview",
+            "cwd": "Users/thavisiny/flutter_itemstack_listview",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_itemstack_listview (profile mode)",
+            "cwd": "Users/thavisiny/flutter_itemstack_listview",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_itemstack_listview (release mode)",
+            "cwd": "Users/thavisiny/flutter_itemstack_listview",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter-video",
+            "cwd": "Users/thavisiny/For_port/flutter-video",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter-video (profile mode)",
+            "cwd": "Users/thavisiny/For_port/flutter-video",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter-video (release mode)",
+            "cwd": "Users/thavisiny/For_port/flutter-video",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "sloth_day",
+            "cwd": "Users/thavisiny/For_port/sloth_day",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sloth_day (profile mode)",
+            "cwd": "Users/thavisiny/For_port/sloth_day",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sloth_day (release mode)",
+            "cwd": "Users/thavisiny/For_port/sloth_day",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "videozea",
+            "cwd": "Users/thavisiny/For_port/videozea",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "videozea (profile mode)",
+            "cwd": "Users/thavisiny/For_port/videozea",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "videozea (release mode)",
+            "cwd": "Users/thavisiny/For_port/videozea",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "apptest",
+            "cwd": "Users/thavisiny/anotherProject/apptest",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "apptest (profile mode)",
+            "cwd": "Users/thavisiny/anotherProject/apptest",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "apptest (release mode)",
+            "cwd": "Users/thavisiny/anotherProject/apptest",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "ecampus-portfolio-web",
+            "cwd": "Users/thavisiny/anotherProject/ecampus-portfolio-web",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "ecampus-portfolio-web (profile mode)",
+            "cwd": "Users/thavisiny/anotherProject/ecampus-portfolio-web",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "ecampus-portfolio-web (release mode)",
+            "cwd": "Users/thavisiny/anotherProject/ecampus-portfolio-web",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "smart_bin",
+            "cwd": "Users/thavisiny/anotherProject/smart_bin",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "smart_bin (profile mode)",
+            "cwd": "Users/thavisiny/anotherProject/smart_bin",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "smart_bin (release mode)",
+            "cwd": "Users/thavisiny/anotherProject/smart_bin",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "task_manage",
+            "cwd": "Users/thavisiny/task-manager-app/task_manage",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "task_manage (profile mode)",
+            "cwd": "Users/thavisiny/task-manager-app/task_manage",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task_manage (release mode)",
+            "cwd": "Users/thavisiny/task-manager-app/task_manage",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
